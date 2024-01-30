@@ -1,16 +1,17 @@
 <template>
-  <div class="authRecoverMessage">
+  <FullsizeOverlay>
     <div class="circleWithCheck">
       <span class="checkSymbol"></span>
     </div>
     <b>The link to recover your password has been sent to your inbox</b>
     <p>Don't forget to check your spam folder if you didn't find anything in your inbox</p>
     <MyButton @click="emit('forgotPasswordForm', false)">Go back</MyButton>
-  </div>
+  </FullsizeOverlay>
 </template>
 
 <script setup lang="ts">
 import MyButton from '@/components/inputs/MyButton.vue';
+import FullsizeOverlay from '@/components/layouts/FullsizeOverlay.vue';
 
 const emit = defineEmits({
   'forgotPasswordForm': (value: boolean) => typeof value === 'boolean'
@@ -46,22 +47,6 @@ const emit = defineEmits({
       border-top: none;
       border-right: none;
     }
-  }
-
-  .authRecoverMessage {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    justify-content: center;
-    background: white;
-    z-index: 1;
-    padding: 32px 64px;
   }
 
   b {

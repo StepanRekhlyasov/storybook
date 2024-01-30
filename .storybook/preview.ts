@@ -25,32 +25,32 @@ const preview: Preview = {
     },
   },
   args: {
-    ['color-primary']: '#16CBC2',
-    ['color-primary-light']: '#98E9E0',
-    ['color-primary-super-light']: '#F1F6FB',
-    ['color-primary-lines']: '#E8ECEB',
-    ['color-primary-lines-light']: '#F5F8F7',
-    ['color-primary-background']: '#f4fcfc',
-    ['color-secondary']: '#16CBC2',
-    ['color-secondary-light']: '#98E9E0',
-    ['color-secondary-super-light']: '#F1F6FB',
-    ['color-secondary-lines']: '#E8ECEB',
-    ['color-secondary-lines-light']: '#F5F8F7',
-    ['color-secondary-background']: '#f4fcfc',
+    // ['color-primary']: '#16CBC2',
+    // ['color-primary-light']: '#98E9E0',
+    // ['color-primary-super-light']: '#F1F6FB',
+    // ['color-primary-lines']: '#E8ECEB',
+    // ['color-primary-lines-light']: '#F5F8F7',
+    // ['color-primary-background']: '#f4fcfc',
+    // ['color-secondary']: '#16CBC2',
+    // ['color-secondary-light']: '#98E9E0',
+    // ['color-secondary-super-light']: '#F1F6FB',
+    // ['color-secondary-lines']: '#E8ECEB',
+    // ['color-secondary-lines-light']: '#F5F8F7',
+    // ['color-secondary-background']: '#f4fcfc',
   },
   argTypes: {
-    ['color-primary']: { table: { category: 'Theme' }, control: 'color' },
-    ['color-primary-light']: { table: { category: 'Theme' }, control: 'color' },
-    ['color-primary-super-light']: { table: { category: 'Theme' }, control: 'color' },
-    ['color-primary-lines']: { table: { category: 'Theme' }, control: 'color' },
-    ['color-primary-lines-light']: { table: { category: 'Theme' }, control: 'color' },
-    ['color-primary-background']: { table: { category: 'Theme' }, control: 'color' },
-    ['color-secondary']: { table: { category: 'Theme' }, control: 'color' },
-    ['color-secondary-light']: { table: { category: 'Theme' }, control: 'color' },
-    ['color-secondary-super-light']: { table: { category: 'Theme' }, control: 'color' },
-    ['color-secondary-lines']: { table: { category: 'Theme' }, control: 'color' },
-    ['color-secondary-lines-light']: { table: { category: 'Theme' }, control: 'color' },
-    ['color-secondary-background']: { table: { category: 'Theme' }, control: 'color' },
+    // ['color-primary']: { table: { category: 'Theme' }, control: 'color' },
+    // ['color-primary-light']: { table: { category: 'Theme' }, control: 'color' },
+    // ['color-primary-super-light']: { table: { category: 'Theme' }, control: 'color' },
+    // ['color-primary-lines']: { table: { category: 'Theme' }, control: 'color' },
+    // ['color-primary-lines-light']: { table: { category: 'Theme' }, control: 'color' },
+    // ['color-primary-background']: { table: { category: 'Theme' }, control: 'color' },
+    // ['color-secondary']: { table: { category: 'Theme' }, control: 'color' },
+    // ['color-secondary-light']: { table: { category: 'Theme' }, control: 'color' },
+    // ['color-secondary-super-light']: { table: { category: 'Theme' }, control: 'color' },
+    // ['color-secondary-lines']: { table: { category: 'Theme' }, control: 'color' },
+    // ['color-secondary-lines-light']: { table: { category: 'Theme' }, control: 'color' },
+    // ['color-secondary-background']: { table: { category: 'Theme' }, control: 'color' },
   },
   decorators: [
     (story, context) => {
@@ -86,7 +86,7 @@ const preview: Preview = {
             }"
             :rerender="rerender"
           >
-          <story/>
+            <story/>
           </a-config-provider>
         `,
       }

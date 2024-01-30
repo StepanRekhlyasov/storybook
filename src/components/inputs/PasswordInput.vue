@@ -1,7 +1,5 @@
 <template>
-  <a-form-item name="password">
     <a-input-password v-model:value="value" :placeholder="placeholder" />
-  </a-form-item>
 </template>
 
 <script setup lang="ts">

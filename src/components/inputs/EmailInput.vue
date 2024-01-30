@@ -1,7 +1,5 @@
 <template>
-  <a-form-item name="email">
-    <a-input v-model:value="value" type="email" :placeholder="placeholder"/>
-  </a-form-item>
+  <a-input v-model:value="value" type="email" :placeholder="placeholder"/>
 </template>
 
 <script setup lang="ts">

@@ -1,6 +1,6 @@
 <template>
-  <div :class="['AuthRememberForgot', { 'AuthRememberForgot_twoButtons': remember_me && forgot_password }]">
-    <a-form-item v-if="remember_me && !forgotPasswordForm" required >
+  <div :class="['AuthRememberForget', { 'AuthRememberForgot_twoButtons': remember_me && forgot_password }]">
+    <a-form-item v-if="remember_me && !forgotPasswordForm" required name="remember_me">
       <a-checkbox v-model:checked="checked" style="user-select: none;">Remember me</a-checkbox>
     </a-form-item>
     <MyButton v-if="!forgotPasswordForm && forgot_password" class="forgotPassword" type="link" @click="handleForgotPassword">Forgot password?</MyButton>
@@ -49,13 +49,13 @@ const emitChecked = () => {
 watch(()=>checked.value, emitChecked, { immediate: true });
 </script>
 <style scoped lang="scss">
-.AuthRememberForgot{
+.AuthRememberForget{
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin: 12px 0;
-  &_twoButtons{
+  margin-top: 12px;
+  &.AuthRememberForgot_twoButtons{
     justify-content: space-between;
   }
   :deep(.ant-form-item){
@@ -65,7 +65,7 @@ watch(()=>checked.value, emitChecked, { immediate: true });
   :deep(label){
     color: var(--color-grey-light);
     &:hover{
-      color: var(--color-primary-light);
+      color: var(--color-primary);
     }
   }
   .forgotPassword {
@@ -75,12 +75,12 @@ watch(()=>checked.value, emitChecked, { immediate: true });
     padding: 0;
     width: auto;
     &:hover{
-      color: var(--color-primary-light);
+      color: var(--color-primary);
     }
   }
 }
 @media screen and (max-width: 450px) {
-  .AuthRememberForgot {
+  .AuthRememberForget {
     flex-direction: column;
   }
   .goBack{

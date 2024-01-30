@@ -4,7 +4,6 @@ import Button from '@/components/inputs/MyButton.vue';
 const meta : Meta = {
   title: 'Inputs/Button',
   component: Button,
-  tags: ['autodocs'],
   argTypes: {
     type: {
       control: {
